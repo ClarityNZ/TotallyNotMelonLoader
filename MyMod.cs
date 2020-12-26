@@ -14,5 +14,9 @@ namespace TotallyNotMelonLoader
             Console.Title = MelonPrefs.GetString("TotallyNotMelonLoader", "Desired Name");
 
         }
+        public override void OnModSettingsApplied()
+        {
+            Console.Title = MelonPrefs.GetString("TotallyNotMelonLoader", "Desired Name");
+        }
     }
 }
